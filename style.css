@@ -372,7 +372,18 @@ footer {
 }
 
 /* Adaptable (Responsivo) */
-
+/* Estilos para pantallas más pequeñas (menos de 320px) */
+@media screen and (max-width: 320px) {
+  .carousel-inner{
+    height: 530px;
+    width: 275px;
+    margin: 5px;
+  }
+  .cargo{
+    font-size: 10px;
+  }
+}
+/* Estilos para pantallas más pequeñas (menos de 400px) */
 @media screen and (max-width: 400px) {
   .overlay p {
     font-size: 18px;
@@ -381,15 +392,34 @@ footer {
   .overlay i {
     font-size: 40px;
   }
+
+  .testimonio-imagen {
+    height: 100px;
+    width: 100px;
+  }
+
+  .testimonio-texto {
+    font-size: 15px;
+  }
+
+  .cliente {
+    font-size: 14px;
+  }
+
+  .cargo {
+    font-size: 12px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+/* Estilos para pantallas entre 400px y 767px */
+@media screen and (min-width: 401px) and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
 }
 
-@media screen and (max-width: 800px) {
+/* Estilos para pantallas entre 768px y 799px */
+@media screen and (min-width: 768px) and (max-width: 799px) {
   .testimonio-imagen {
     height: 120px;
     width: 120px;
@@ -400,7 +430,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 700px) {
+/* Estilos para pantallas más grandes (más de 800px) */
+@media screen and (min-width: 800px) {
   .hero-inferior-imagen {
     max-width: 600px;
   }
