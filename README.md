@@ -1,5 +1,5 @@
 #Este portafolio fue contruido en base de un platantilla
-## Version actual: 
+## Version actual: https://jamal25-ia.github.io/Portafolio_Kristopher/
 
 ## Datos Plantilla(version Vieja):
 creadora: https://github.com/dantrixxheron/portafolioBootstrapCMD
