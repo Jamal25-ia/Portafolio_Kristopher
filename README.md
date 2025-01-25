@@ -1,6 +1,10 @@
 #Este portafolio fue contruido en base de un platantilla
 ## Version actual: https://jamal25-ia.github.io/Portafolio_Kristopher/
 
+## Otra plantilla parecida a la anterior:
+https://github.com/estefaniacn/portafolio-adaptable-bootstrap
+Lo chistoso es que los 3 portafolios parece que usamos el mismo codigo XD.
+
 ## Datos Plantilla(version Vieja):
 creadora: https://github.com/dantrixxheron/portafolioBootstrapCMD
 Este proyecto creado para el bootcamp Tecnolochicas PRO, es una página web adaptable a dispositivos de distintos tamaños (este tipo de sitio web se conoce en inglés como "responsive"). 
