@@ -7,10 +7,10 @@ let typewriter = new Typewriter(app, {
  
 typewriter
   .pauseFor(2000)
-  .typeString('Estudio Ingeniería de Software.')
+  .typeString('Hago diseños de publicidad y marketing.')
   .pauseFor(200)
-  .deleteChars(31)
-  .typeString('Soy una líder en busca de nuevos retos y generar impacto en la sociedad tecnológica.')
+  .deleteChars(40)
+  .typeString('Perito en Administracion de empresas.')
   .pauseFor(150)
   .deleteChars(84)
   .start();
