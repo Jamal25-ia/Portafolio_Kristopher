@@ -24,27 +24,28 @@
   </head>
   <body>
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm py-2">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#">
-            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
-          </a>
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              <a class="nav-link active fw-bold text-dark" aria-current="page" href="#sobre-mi">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
+              <a class="nav-link fw-bold text-dark" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonios">Testimonios</a>
+              <a class="nav-link fw-bold text-dark" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link fw-bold text-dark" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -52,7 +53,7 @@
     </nav>
 
     <!-- Seccion Hero -->
-    <section class="hero align-items-stretch">
+    <section class="hero align-items-stretch pt-5"><!-- Padding-top de 3rem (48px) para evitar que el contenido quede detrás del navbar -->
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
         <img class="hero-imagen-desarrollador" src="img/ImagenInicial.png" alt="Foto de Kristopher">
         <h1>Hola, soy <br> Kristopher Sául Carías Arreaga</h1>
