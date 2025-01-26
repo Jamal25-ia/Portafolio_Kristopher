@@ -39,6 +39,9 @@
               <a class="nav-link active fw-bold text-dark" aria-current="page" href="#sobre-mi">Sobre mí</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link fw-bold text-dark" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
@@ -51,6 +54,56 @@
         </div>
       </div>
     </nav>
+
+    <style>
+    /* Estilo para el enlace activo */
+    .nav-link.active {
+      color: #007BFF !important; /* Azul moderno */
+      position: relative;
+    }
+
+    /* Subrayado animado */
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #007BFF; /* Mismo color que el texto */
+      animation: underline 0.3s ease-in-out;
+    }
+
+    @keyframes underline {
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
+    }
+  </style>
+    <!-- Script hace que nav cambie de colro dependiendo donde estas-->
+    <script>
+      document.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - sectionHeight * 0.25 && window.scrollY < sectionTop + sectionHeight - sectionHeight * 0.25) {
+            const id = section.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      });
+    </script>
 
     <!-- Seccion Hero -->
     <section class="hero align-items-stretch pt-5"><!-- Padding-top de 3rem (48px) para evitar que el contenido quede detrás del navbar -->
@@ -76,7 +129,7 @@
     </section>
 
     <!-- Experiencia -->
-    <section class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara">
       <div class="container text-center">
 
         <h2 class="seccion-titulo">Experiencia laboral</h2>
