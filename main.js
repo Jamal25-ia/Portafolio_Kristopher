@@ -7,7 +7,7 @@ let typewriter = new Typewriter(app, {
  
 typewriter
   .pauseFor(2000)
-  .typeString('Hago diseños de publicidad y marketing.')
+  .typeString('Hago diseños de publicidad.')
   .pauseFor(200)
   .deleteChars(40)
   .typeString('Perito en Administracion de empresas.')
