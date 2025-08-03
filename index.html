@@ -196,87 +196,39 @@ joyeria. Tel: 2288-2450 o 5607-2050
     <section id="Conocimientos" class="py-5">
       <div class="container">
         <h2 class="text-center fw-bold mb-4">Mis Conocimientos</h2>
-
-        <div class="row justify-content-center g-4">
-          <div class="col-12 col-md-8 col-lg-6">
-            <!-- Mecanografía -->
-            <div class="card shadow-sm mb-3">
-              <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-keyboard fs-3 me-2 text-dark"></i>
-                  <span class="fw-bold">Mecanografía</span>
-                </div>
-                <div class="flex-fill">
-                  <div class="progress rounded-pill" style="height: 10px">
-                    <div class="progress-bar bg-success" style="width: 100%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Photoshop -->
-            <div class="card shadow-sm mb-3">
-              <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-palette fs-3 me-2 text-dark"></i>
-                  <span class="fw-bold">Adobe Photoshop CS6</span>
-                </div>
-                <div class="flex-fill">
-                  <div class="progress rounded-pill" style="height: 10px">
-                    <div class="progress-bar bg-warning" style="width: 30%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Illustrator -->
-            <div class="card shadow-sm mb-3">
-              <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-bezier fs-3 me-2 text-dark"></i>
-                  <span class="fw-bold">Adobe Illustrator CS6</span>
-                </div>
-                <div class="flex-fill">
-                  <div class="progress rounded-pill" style="height: 10px">
-                    <div class="progress-bar bg-warning" style="width: 30%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Office -->
-            <div class="card shadow-sm mb-3">
-              <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-file-earmark-text fs-3 me-2 text-dark"></i>
-                  <span class="fw-bold">Office (Word, Excel, PowerPoint)</span>
-                </div>
-                <div class="flex-fill">
-                  <div class="progress rounded-pill" style="height: 10px">
-                    <div class="progress-bar bg-primary" style="width: 70%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Inglés -->
-            <div class="card shadow-sm">
-              <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-translate fs-3 me-2 text-dark"></i>
-                  <span class="fw-bold">Inglés</span>
-                </div>
-                <div class="flex-fill">
-                  <div class="progress rounded-pill" style="height: 10px">
-                    <div class="progress-bar bg-danger" style="width: 15%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6" id="skillCards"></div>
         </div>
       </div>
     </section>
+
+    <!-- 2. Renderizado rápido -->
+    <script>
+      const skills = [
+        { icon:'bi-keyboard',       label:'Mecanografía',                     width:100, color:'bg-success' },
+        { icon:'bi-palette',        label:'Adobe Photoshop CS6',              width:30,  color:'bg-warning' },
+        { icon:'bi-bezier',         label:'Adobe Illustrator CS6',            width:30,  color:'bg-warning' },
+        { icon:'bi-file-earmark-text',label:'Office (Word, Excel, PowerPoint)',width:70,  color:'bg-primary' },
+        { icon:'bi-translate',      label:'Inglés',                           width:15,  color:'bg-danger'  }
+      ];
+      const container = document.getElementById('skillCards');
+      skills.forEach(s => {
+        container.insertAdjacentHTML('beforeend', `
+          <div class="card shadow-sm mb-3">
+            <div class="card-body d-flex flex-column flex-sm-row align-items-sm-center gap-3 p-3">
+              <div class="d-flex align-items-center">
+                <i class="bi ${s.icon} fs-1 me-2 text-dark"></i>
+                <span class="fw-bold">${s.label}</span>
+              </div>
+              <div class="flex-fill">
+                <div class="progress rounded-pill" style="height:10px">
+                  <div class="progress-bar ${s.color}" style="width:${s.width}%"></div>
+                </div>
+              </div>
+            </div>
+          </div>`);
+      });
+    </script>
   
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
