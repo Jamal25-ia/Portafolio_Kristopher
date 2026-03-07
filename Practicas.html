@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light"> <!--Navbar se expande en pantallas MD-->>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Manual de supervivencia en Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto"> <!--Auto para llevar a Izquierda el margen-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+ <h3 class="text-center">Manual de supervivencia en Bootstrap</h3>
+ <h4 class="text-center text-primary">Columnas</h4>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Breakpoint</th>
+            <th>Class infix</th>
+            <th>Dimensions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>X-Small</td>
+            <td><em>None</em></td>
+            <td>&lt;576px</td>
+        </tr>
+        <tr>
+            <td>Small</td>
+            <td><code>sm</code></td>
+            <td>≥576px</td>
+        </tr>
+        <tr>
+            <td>Medium</td>
+            <td><code>md</code></td>
+            <td>≥768px</td>
+        </tr>
+        <tr>
+            <td>Large</td>
+            <td><code>lg</code></td>
+            <td>≥992px</td>
+        </tr>
+        <tr>
+            <td>Extra large</td>
+            <td><code>xl</code></td>
+            <td>≥1200px</td>
+        </tr>
+        <tr>
+            <td>Extra extra large</td>
+            <td><code>xxl</code></td>
+            <td>≥1400px</td>
+        </tr>
+        </tbody>
+    </table>
+    <h4 class="text-warning"> Ejemplo para varias pantallas:</h4>
+    <div class="row mb-3" data-vivaldi-translated="">
+        <div class="col-6 col-sm-4 themed-grid-col" data-vivaldi-translated="">. .col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 themed-grid-col" data-vivaldi-translated="">. .col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 themed-grid-col" data-vivaldi-translated="">. .col-6 .col-sm-4</div>
+    </div>
+<h4 class="text-dark text-center">Mas Ejemplos: <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/grid/"> PRECIONAME</a> </h4>
+
+
+<h4 class="text-primary"> Margenes</h4>
+<p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#contenidoOculto" role="button" aria-expanded="false" aria-controls="contenidoOculto">
+        Ver documentacion margenes.
+    </a>
+</p>
+<!-- Contenido colapsable -->
+<div class="collapse" id="contenidoOculto">
+    <div class="card card-body">
+        <div class="bd-content ps-lg-4">
+            <div class="bd-content ps-lg-4" data-vivaldi-translated="">
+
+                <h2 id="margin-and-padding" data-vivaldi-translated="">Margen y acolchado<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#margin-and-padding" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h2>
+        <p data-vivaldi-translated="">Asigne responsive-friendly <code>margin</code> o <code>padding</code> valores de un elemento o un subconjunto de sus lados con clases abreviadas. Incluye soporte para propiedades individuales, todas las propiedades y propiedades verticales y horizontales. Las clases se crean a partir de un mapa Sass predeterminado que va desde <code>.25rem</code> to <code>3rem</code>.</p>
+        <p data-vivaldi-translated="">¿Cómo utilizar el módulo de diseño CSS Grid? Considere usar <a href="#gap" data-vivaldi-translated="">La utilidad de la brecha</a>.</p>
+        <h3 id="notation" data-vivaldi-translated="">Notación<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#notation" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h3>
+        <p data-vivaldi-translated="">Utilidades de espaciado que se aplican a todos los puntos de interrupción, desde <code>xs</code> to <code>xxl</code>, no tienen abreviatura de punto de interrupción. Esto se debe a que esas clases se aplican desde <code>min-width: 0</code> y arriba, y por lo tanto no están vinculados por una consulta de medios. Sin embargo, los puntos de interrupción restantes incluyen una abreviatura de punto de interrupción.</p>
+        <p data-vivaldi-translated="">Las clases se nombran utilizando el formato <code>{property}{sides}-{size}</code> para <code>xs</code> y <code>{property}{sides}-{breakpoint}-{size}</code> para <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, y <code>xxl</code>.</p>
+        <p data-vivaldi-translated="">Donde <em data-vivaldi-translated="">propiedad</em> es uno de:</p>
+        <ul>
+        <li data-vivaldi-translated=""><code>m</code> - para clases que establecen <code>margin</code></li>
+        <li data-vivaldi-translated=""><code>p</code> - para clases que establecen <code>padding</code></li>
+        </ul>
+        <p data-vivaldi-translated="">Donde <em data-vivaldi-translated="">lados</em> es uno de:</p>
+        <ul>
+        <li data-vivaldi-translated=""><code>t</code> - para clases que establecen <code>margin-top</code> o <code>padding-top</code></li>
+        <li data-vivaldi-translated=""><code>b</code> - para clases que establecen <code>margin-bottom</code> o <code>padding-bottom</code></li>
+        <li data-vivaldi-translated=""><code>s</code> - (inicio) para clases que establecen <code>margin-left</code> o <code>padding-left</code> în LTR, <code>margin-right</code> o <code>padding-right</code> en RTL</li>
+        <li data-vivaldi-translated=""><code>e</code> - (fin) para clases que establecen <code>margin-right</code> o <code>padding-right</code> în LTR, <code>margin-left</code> o <code>padding-left</code> en RTL</li>
+        <li data-vivaldi-translated=""><code>x</code> - para clases que establecen ambos <code>*-left</code> y <code>*-right</code></li>
+        <li data-vivaldi-translated=""><code>y</code> - para clases que establecen ambos <code>*-top</code> y <code>*-bottom</code></li>
+        <li data-vivaldi-translated="">en blanco - para clases que establecen un <code>margin</code> o <code>padding</code> en los 4 lados del elemento</li>
+        </ul>
+        <p data-vivaldi-translated="">Donde <em data-vivaldi-translated="">tamaño</em> es uno de:</p>
+        <ul>
+        <li data-vivaldi-translated=""><code>0</code> - para clases que eliminen el <code>margin</code> o <code>padding</code> configurándolo en <code>0</code></li>
+        <li data-vivaldi-translated=""><code>1</code> - (por defecto) para clases que configuran el <code>margin</code> o <code>padding</code> to <code>$spacer * .25</code></li>
+        <li data-vivaldi-translated=""><code>2</code> - (por defecto) para clases que configuran el <code>margin</code> o <code>padding</code> to <code>$spacer * .5</code></li>
+        <li data-vivaldi-translated=""><code>3</code> - (por defecto) para clases que configuran el <code>margin</code> o <code>padding</code> to <code>$spacer</code></li>
+        <li data-vivaldi-translated=""><code>4</code> - (por defecto) para clases que configuran el <code>margin</code> o <code>padding</code> to <code>$spacer * 1.5</code></li>
+        <li data-vivaldi-translated=""><code>5</code> - (por defecto) para clases que configuran el <code>margin</code> o <code>padding</code> to <code>$spacer * 3</code></li>
+        <li data-vivaldi-translated=""><code>auto</code> - para clases que establecen el <code>margin</code> a auto</li>
+        </ul>
+        <p data-vivaldi-translated="">(Puedes agregar más tamaños agregando entradas al <code>$spacers</code> Variable del mapa Sass.)</p>
+        <h3 id="examples" data-vivaldi-translated="">Ejemplos<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#examples" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h3>
+        <p data-vivaldi-translated="">A continuación se muestran algunos ejemplos representativos de estas clases:</p>
+        <div class="bd-clipboard" data-vivaldi-translated=""><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard" data-vivaldi-translated="">Copiar</button></div><div class="highlight" data-vivaldi-translated=""><pre class="chroma" data-vivaldi-translated=""><code class="language-scss" data-lang="scss"><span class="nc" data-vivaldi-translated="">.mt-0</span> <span class="p" data-vivaldi-translated="">{</span>
+          <span class="na" data-vivaldi-translated="">margin-top</span><span class="o" data-vivaldi-translated="">:</span> <span class="mi" data-vivaldi-translated="">0</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="p" data-vivaldi-translated="">}</span>
+        
+        <span class="nc" data-vivaldi-translated="">.ms-1</span> <span class="p" data-vivaldi-translated="">{</span>
+          <span class="na" data-vivaldi-translated="">margin-left</span><span class="o" data-vivaldi-translated="">:</span> <span class="p" data-vivaldi-translated="">(</span><span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mf" data-vivaldi-translated="">.25</span><span class="p" data-vivaldi-translated="">)</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="p" data-vivaldi-translated="">}</span>
+        
+        <span class="nc" data-vivaldi-translated="">.px-2</span> <span class="p" data-vivaldi-translated="">{</span>
+          <span class="na" data-vivaldi-translated="">padding-left</span><span class="o" data-vivaldi-translated="">:</span> <span class="p" data-vivaldi-translated="">(</span><span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mf" data-vivaldi-translated="">.5</span><span class="p" data-vivaldi-translated="">)</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+          <span class="na" data-vivaldi-translated="">padding-right</span><span class="o" data-vivaldi-translated="">:</span> <span class="p" data-vivaldi-translated="">(</span><span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mf" data-vivaldi-translated="">.5</span><span class="p" data-vivaldi-translated="">)</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="p" data-vivaldi-translated="">}</span>
+        
+        <span class="nc" data-vivaldi-translated="">.p-3</span> <span class="p" data-vivaldi-translated="">{</span>
+          <span class="na" data-vivaldi-translated="">padding</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="p" data-vivaldi-translated="">}</span>
+        </code></pre></div><h3 id="horizontal-centering" data-vivaldi-translated="">Centrado horizontal<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#horizontal-centering" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h3>
+        <p data-vivaldi-translated="">Además, Bootstrap también incluye un <code>.mx-auto</code> clase para centrar horizontalmente contenido a nivel de bloque de ancho fijo —es decir, contenido que tiene <code>display: block</code> y un <code>width</code> set—estableciendo los márgenes horizontales en <code>auto</code>.</p>
+        <div class="bd-example" data-vivaldi-translated="">
+          <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);" data-vivaldi-translated="">Elemento centrado </div>
+        </div>
+        <div class="bd-clipboard" data-vivaldi-translated=""><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard" data-vivaldi-translated="">Copiar</button></div><div class="highlight" data-vivaldi-translated=""><pre class="chroma" data-vivaldi-translated=""><code class="language-html" data-lang="html"><span class="p" data-vivaldi-translated="">&lt;</span><span class="nt" data-vivaldi-translated="">div</span> <span class="na" data-vivaldi-translated="">class</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"mx-auto"</span> <span class="na" data-vivaldi-translated="">style</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"width: 200px;"</span><span class="p" data-vivaldi-translated="">&gt;</span>
+          Centered element
+        <span class="p" data-vivaldi-translated="">&lt;/</span><span class="nt" data-vivaldi-translated="">div</span><span class="p" data-vivaldi-translated="">&gt;</span>
+        </code></pre></div><h2 id="negative-margin" data-vivaldi-translated="">Margen negativo<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#negative-margin" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h2>
+        <p data-vivaldi-translated="">En CSS, <code>margin</code> Las propiedades pueden utilizar valores negativos (<code>padding</code> no puedo). Estos márgenes negativos son <strong data-vivaldi-translated="">deshabilitado de forma predeterminada</strong>, pero se puede habilitar en Sass configurando <code>$enable-negative-margins: true</code>.</p>
+        <p data-vivaldi-translated="">La sintaxis es casi la misma que la de las utilidades de margen positivo predeterminadas, pero con la adición de <code>n</code> antes del tamaño solicitado. Aquí hay una clase de ejemplo que es lo opuesto a <code>.mt-1</code>:</p>
+        <div class="bd-clipboard" data-vivaldi-translated=""><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard" data-vivaldi-translated="">Copiar</button></div><div class="highlight" data-vivaldi-translated=""><pre class="chroma" data-vivaldi-translated=""><code class="language-scss" data-lang="scss"><span class="nc" data-vivaldi-translated="">.mt-n1</span> <span class="p" data-vivaldi-translated="">{</span>
+          <span class="na" data-vivaldi-translated="">margin-top</span><span class="o" data-vivaldi-translated="">:</span> <span class="o" data-vivaldi-translated="">-</span><span class="mi" data-vivaldi-translated="">0</span><span class="mf" data-vivaldi-translated="">.25</span><span class="kt" data-vivaldi-translated="">rem</span> <span class="k" data-vivaldi-translated="">!important</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="p" data-vivaldi-translated="">}</span>
+        </code></pre></div><h2 id="gap" data-vivaldi-translated="">Brecha<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#gap" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h2>
+        <p data-vivaldi-translated="">Cuando se utiliza <code>display: grid</code>, puedes utilizar <code>gap</code> utilidades en el contenedor de la red principal. Esto puede ahorrarle la necesidad de agregar utilidades de margen a elementos individuales de la cuadrícula (hijos de a <code>display: grid</code> contenedor). Las utilidades de Gap responden de forma predeterminada y se generan a través de nuestra API de utilidades, basada en <code>$spacers</code> Mapa de Sass.</p>
+        <div class="bd-example" data-vivaldi-translated="">
+        <div class="d-grid gap-3" data-vivaldi-translated="">
+          <div class="p-2 bg-light border" data-vivaldi-translated="">Elemento de cuadrícula 1</div>
+          <div class="p-2 bg-light border" data-vivaldi-translated="">Elemento de cuadrícula 2</div>
+          <div class="p-2 bg-light border" data-vivaldi-translated="">Elemento de cuadrícula 3</div>
+        </div>
+        </div><div class="bd-clipboard" data-vivaldi-translated=""><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard" data-vivaldi-translated="">Copiar</button></div><div class="highlight" data-vivaldi-translated=""><pre class="chroma" data-vivaldi-translated=""><code class="language-html" data-lang="html"><span class="p" data-vivaldi-translated="">&lt;</span><span class="nt" data-vivaldi-translated="">div</span> <span class="na" data-vivaldi-translated="">class</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"d-grid gap-3"</span><span class="p" data-vivaldi-translated="">&gt;</span>
+          <span class="p" data-vivaldi-translated="">&lt;</span><span class="nt" data-vivaldi-translated="">div</span> <span class="na" data-vivaldi-translated="">class</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"p-2 bg-light border"</span><span class="p" data-vivaldi-translated="">&gt;</span>Grid item 1<span class="p" data-vivaldi-translated="">&lt;/</span><span class="nt" data-vivaldi-translated="">div</span><span class="p" data-vivaldi-translated="">&gt;</span>
+          <span class="p" data-vivaldi-translated="">&lt;</span><span class="nt" data-vivaldi-translated="">div</span> <span class="na" data-vivaldi-translated="">class</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"p-2 bg-light border"</span><span class="p" data-vivaldi-translated="">&gt;</span>Grid item 2<span class="p" data-vivaldi-translated="">&lt;/</span><span class="nt" data-vivaldi-translated="">div</span><span class="p" data-vivaldi-translated="">&gt;</span>
+          <span class="p" data-vivaldi-translated="">&lt;</span><span class="nt" data-vivaldi-translated="">div</span> <span class="na" data-vivaldi-translated="">class</span><span class="o" data-vivaldi-translated="">=</span><span class="s" data-vivaldi-translated="">"p-2 bg-light border"</span><span class="p" data-vivaldi-translated="">&gt;</span>Grid item 3<span class="p" data-vivaldi-translated="">&lt;/</span><span class="nt" data-vivaldi-translated="">div</span><span class="p" data-vivaldi-translated="">&gt;</span>
+        <span class="p" data-vivaldi-translated="">&lt;/</span><span class="nt" data-vivaldi-translated="">div</span><span class="p" data-vivaldi-translated="">&gt;</span></code></pre></div>
+        <p data-vivaldi-translated="">El soporte incluye opciones responsivas para todos los puntos de interrupción de la cuadrícula de Bootstrap, así como seis tamaños desde el <code>$spacers</code> mapa (<code>0</code>–<code>5</code>). No hay <code>.gap-auto</code> clase de utilidad ya que es efectivamente la misma que <code>.gap-0</code>.</p>
+        <h2 id="sass" data-vivaldi-translated="">Sass<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#sass" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h2>
+        <h3 id="maps" data-vivaldi-translated="">Mapas<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#maps" style="padding-left: 0.375em;" data-vivaldi-translated=""></a></h3>
+        <p data-vivaldi-translated="">Las utilidades de espaciado se declaran a través del mapa Sass y luego se generan con nuestra API de utilidades.</p>
+        <div class="bd-clipboard" data-vivaldi-translated=""><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard" data-vivaldi-translated="">Copiar</button></div><div class="highlight" data-vivaldi-translated=""><pre class="chroma" data-vivaldi-translated=""><code class="language-scss" data-lang="scss"><span class="nv" data-vivaldi-translated="">$spacer</span><span class="o" data-vivaldi-translated="">:</span> <span class="mi" data-vivaldi-translated="">1</span><span class="kt" data-vivaldi-translated="">rem</span><span class="p" data-vivaldi-translated="">;</span>
+        <span class="nv" data-vivaldi-translated="">$spacers</span><span class="o" data-vivaldi-translated="">:</span> <span class="p" data-vivaldi-translated="">(</span>
+          <span class="na" data-vivaldi-translated="">0</span><span class="o" data-vivaldi-translated="">:</span> <span class="mi" data-vivaldi-translated="">0</span><span class="o" data-vivaldi-translated="">,</span>
+          <span class="na" data-vivaldi-translated="">1</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mf" data-vivaldi-translated="">.25</span><span class="o" data-vivaldi-translated="">,</span>
+          <span class="na" data-vivaldi-translated="">2</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mf" data-vivaldi-translated="">.5</span><span class="o" data-vivaldi-translated="">,</span>
+          <span class="na" data-vivaldi-translated="">3</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span><span class="o" data-vivaldi-translated="">,</span>
+          <span class="na" data-vivaldi-translated="">4</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mi" data-vivaldi-translated="">1</span><span class="mf" data-vivaldi-translated="">.5</span><span class="o" data-vivaldi-translated="">,</span>
+          <span class="na" data-vivaldi-translated="">5</span><span class="o" data-vivaldi-translated="">:</span> <span class="nv" data-vivaldi-translated="">$spacer</span> <span class="o" data-vivaldi-translated="">*</span> <span class="mi" data-vivaldi-translated="">3</span><span class="o" data-vivaldi-translated="">,</span>
+        <span class="p" data-vivaldi-translated="">);</span>
+        
+        <span class="nv" data-vivaldi-translated="">$negative-spacers</span><span class="o" data-vivaldi-translated="">:</span> <span class="nf" data-vivaldi-translated="">if</span><span class="p" data-vivaldi-translated="">(</span><span class="nv" data-vivaldi-translated="">$enable-negative-margins</span><span class="o" data-vivaldi-translated="">,</span> <span class="nf" data-vivaldi-translated="">negativify-map</span><span class="p" data-vivaldi-translated="">(</span><span class="nv" data-vivaldi-translated="">$spacers</span><span class="p" data-vivaldi-translated="">)</span><span class="o" data-vivaldi-translated="">,</span> <span class="n" data-vivaldi-translated="">null</span><span class="p" data-vivaldi-translated="">);</span>
+        </code></pre></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5"> <!-- Margen top 5-->
+    <div class="row">
+        <div class="col-6 bg-danger p-5"><!--Pading(Arriba abajo izquierda derecha espacio 5)-->
+            aaaaaaaaaaaaaaaaaaaaaa
+        </div>
+        <div class="col-6 bg-primary">
+            bbbbbbbbbbbbbbbbbbbbbb
+        </div>
+    </div>
+</div>
+
+<h4 class="text-primary"> Barra fluida con contenido cambiable a varias pantallas.</h4>
+<div class="container-fluid bg-dark text-center">
+    <div class="row text-primary"><!--CREAMOS UNA FILA-->
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+        <div class="col-xl-2 col-md-4 col-sm-6"><h2>a</h2></div>
+    </div>
+</div>
+
+</body>
+</html>
